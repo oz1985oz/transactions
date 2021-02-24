@@ -1,0 +1,12 @@
+<app-header></app-header>
+<main>
+  <h2>
+    כמות עסקאות
+    {{ (data$ | async)?.transactions.length }},
+    סה"כ עסקאות
+    {{ totalAmount | number }}
+    ש"ח
+  </h2>
+  <app-transactions [data]="data$ | async"></app-transactions>
+</main>
+<app-footer></app-footer>

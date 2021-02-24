@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <form #loginForm="ngForm">
+      <mat-form-field>
+          <mat-label>שם משתמש</mat-label>
+          <input matInput name="userName" placeholder="שם משתמש" ngModel required>
+          <mat-error>שדה חובה</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>סיסמא</mat-label>
+          <input matInput type="password" name="password" placeholder="סיסמא" ngModel required>
+          <mat-error>שדה חובה</mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="login(loginForm)">התחבר</button>
+  </form>
+</div>

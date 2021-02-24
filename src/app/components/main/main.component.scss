@@ -1,0 +1,21 @@
+app-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+main {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  app-transactions {
+    width: calc(100% - 1rem);
+  }
+}
